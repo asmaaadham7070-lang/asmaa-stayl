@@ -1,0 +1,279 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    direction: ltr;
+    margin:0 ;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+header{
+    background-color: rgb(215, 210, 191);
+    box-shadow:0 3px 15px rgba(168, 156, 25, 0.814);
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: x-large;
+    z-index: 1000;
+     position: sticky;
+     top: 0;
+     padding: 18px 30px;
+     display: flex;
+
+     align-items: center;
+     justify-content: space-between;
+}
+
+.header a{
+    text-decoration: none;
+    font-weight: 800;
+    color: rgb(11, 11, 12);
+}
+.n{
+    display: flex;
+    gap: 45px; /* مسافة متساوية ومريحة بين كل قسم والتاني */
+}
+.ph{
+     width: 100%;
+    height: 500px;;
+    object-fit: cover;
+    object-position: top;
+    display: block;
+}
+.s{
+   align-items: center;  
+   display: flex;
+   justify-content: center;
+}
+.❀{
+    direction:rtl;
+    font-size: xx-large;
+}
+.products-grid {
+    display: flex;
+    flex-wrap: wrap;       /* يسمح للكروت بالالتفاف والنزول لسطر جديد لو المساحة خلصت */
+    gap: 20px;             /* مسافة مريحة ومتساوية بين الكروت وبعضها طولاً وعرضاً */
+    justify-content: center; /* لتوسيط الكروت في المنتصف بشكل جميل */
+}
+.product-card {
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    position: relative;
+    text-align: center;
+    transition: transform 0.3s ease;
+    padding: 2px;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+}
+div{
+    color: rgb(134, 115, 12);
+    margin: 2px;
+    
+}
+.img{
+height: 350px;
+width: 100%;
+ object-fit: contain;
+ box-shadow: 0 7px 10px rgba(0,0,0,0.08);
+ border-radius: 20px;
+ position: relative; /* عشان نتحكم في مكان العناصر جواه براحتنا */
+    overflow: hidden;   /* عشان أي صورة تكبر جواه متطلعش برة حدود الكارد وتخرب التصميم */
+}
+
+.product-card:hover{
+  transform: translateY(-5px); /* رفع الكارد قليلاً عند الـ Hover */
+}
+
+
+/*هنعمل ان الكارت الصورتين يطلعو فوق بعض*/
+.img img {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+     position: absolute;  
+    object-fit :contain; /* لقص الصورة وتثبيتها داخل المربع بدون تمطيط */
+    transition: opacity 0.4s ease;
+}
+.img1-1,.img2-1,.img3-1,.img4-1,.img5-1,.img6-1,.img7-1,.img8-1,.img9-1,.img10-1,.img11-1,.img12-1,.img13-1{
+    opacity: 1;
+    z-index: 1;
+}
+.img1-2,.img2-2,.img3-2,.img4-2,.img5-2,.img6-2,.img7-2,.img8-2,.img9-2,.img10-2,.img11-2,.img12-2,.img13-2{
+    opacity: 0;
+    z-index: 2;
+}
+.product-card:hover .img1-1 {opacity: 0;} 
+.product-card:hover .img1-2{opacity: 1;}
+
+.product-card:hover .img2-1 {opacity: 0;} 
+.product-card:hover .img2-2{opacity: 1;}
+
+.product-card:hover .img3-1 {opacity: 0;} 
+.product-card:hover .img3-2{opacity: 1;}
+
+.product-card:hover .img4-1 {opacity: 0;} 
+.product-card:hover .img4-2{opacity: 1;}
+
+.product-card:hover .img5-1 {opacity: 0;} 
+.product-card:hover .img5-2{opacity: 1;}
+
+.product-card:hover .img6-1 {opacity: 0;} 
+.product-card:hover .img6-2{opacity: 1;}
+
+.product-card:hover .img7-1 {opacity: 0;} 
+.product-card:hover .img7-2{opacity: 1;}
+
+.product-card:hover .img8-1 {opacity: 0;} 
+.product-card:hover .img8-2{opacity: 1;}
+
+.product-card:hover .img9-1 {opacity: 0;} 
+.product-card:hover .img9-2{opacity: 1;}
+
+.product-card:hover .img10-1 {opacity: 0;} 
+.product-card:hover .img10-2{opacity: 1;}
+
+.product-card:hover .img11-1 {opacity: 0;} 
+.product-card:hover .img11-2{opacity: 1;}
+
+.product-card:hover .img12-1 {opacity: 0;} 
+.product-card:hover .img12-2{opacity: 1;}
+
+.product-card:hover .img13-1 {opacity: 0;} 
+.product-card:hover .img13-2{opacity: 1;}
+
+
+
+/* تنسيق قسم النصوص داخل الكارت */
+.product-card div:last-child {
+    padding: 10px 5px;
+    display: grid;
+    flex-direction: column;
+    gap: 8px; /* مسافة صغيرة ومنسقة بين العنوان والسعر والزرار */
+}
+
+/* تنسيق عناوين المنتجات داخل الكارت */
+.product-card h3 {
+    font-size: 16px;
+    margin: 0;
+    color: rgb(134, 115, 12);
+    font-weight: 600;
+}
+
+/* تنسيق السعر */
+.product-card p {
+    font-size: 15px;
+    font-weight: bold;
+    margin: 0;
+    color: #333;
+}
+
+/* تنسيق زر الإضافة للسلة */
+.product-card button {
+    padding: 8px 12px;
+    background-color: rgb(215, 210, 191);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.2s;
+}
+
+.product-card button:hover {
+    background-color: rgb(195, 190, 171);
+}
+
+h2{
+    font-size:xx-large;
+    height: 5px 200px;
+    justify-content:center;
+   text-align: center;
+      color: black;
+}
+h2:hover{
+    color: #aba13d;
+    cursor:help;
+}
+
+
+
+.add{
+    cursor: pointer;
+}
+
+
+/* ========================================== */
+/* إعدادات التجاوب مع الموبايل (Media Queries) */
+/* ========================================== */
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        gap: 12px;
+        padding: 12px 10px;
+    }
+
+    .n {
+        gap: 12px;
+        font-size: 14px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .ph {
+        height: 260px; /* تقليل ارتفاع صورة الغلاف في الموبايل */
+    }
+
+    .s {
+        font-size: 18px;
+        padding: 0 10px;
+    }
+
+    .flower-text {
+        font-size: 16px;
+    }
+
+    h2 {
+        font-size: 22px;
+    }
+
+    .products-grid {
+        gap: 15px;
+        padding: 10px 5px;
+    }
+
+    .product-card {
+        width: 92%; /* جعل الكارد يأخذ أغلب عرض شاشة الموبايل */
+    }
+
+    .img {
+        height: 280px; /* تناسب ارتفاع الصورة مع شاشة الموبايل */
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

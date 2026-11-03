@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+    <link rel="stylesheet" href="s.css">
+</head>
+<body>
+  <h1>shopping cart🛍️</h1>  
+  <div id="cart-container"></div>
+  <h2> Total:
+     <span class="total"> 0 </span>
+     EGP</h2>
+     <button id="complete-btn" >complete order</button>
+     <div id="address-box" style="display:none ;">
+        <h2>Delivery Address</h2>
+        <textarea id="address" placeholder="اكتب عنوانك بتفصيل"></textarea>
+        <input id="phone" placeholder="اكتب رقم الفون للتواصل" required>
+        <button id="confirm-order">confirm order</button>
+     </div>
+     <script src="cart.js"></script>
+</body>
+</html>

@@ -1,0 +1,66 @@
+body{
+    text-align: center;
+    color: rgb(92, 77, 59);
+    background-color: bisque;
+}
+#confirm-order{
+    margin: auto;
+    font-size: x-large;
+    border-color: black;
+    background-color: rgb(220, 196, 169);
+    cursor: pointer;
+    border-radius: 10px;
+      color: black;
+}
+#confirm-order:hover{
+background-color: rgb(192, 183, 171);
+}
+button{
+      margin: auto;
+    font-size: 18px;
+    border-color: black;
+    background-color: rgb(220, 196, 169);
+    cursor: pointer;
+    border-radius: 7px;
+    color: black;
+}
+#phone,
+#address {
+    display: block;
+    width: 280px;
+    max-width: 90%;
+    margin: 15px auto;
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #8b7865;
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+h1{
+    font-size:50px;
+    color: rgb(142, 0, 28);
+}
+
+/* ========================================== */
+/* التجاوب مع الهواتف الذكية (Media Queries) */
+/* ========================================== */
+
+@media (max-width: 768px) {
+    body {
+        padding: 15px 5px;
+    }
+
+    h1 {
+        font-size: 32px; /* تصغير عنوان السلة قليلاً ليناسب شاشة الموبايل */
+    }
+
+    #phone,
+    #address {
+        width: 90%; /* ملء عرض شاشة الموبايل بشكل مريح */
+    }
+
+    button, #confirm-order {
+        font-size: 16px;
+        padding: 10px 15px;
+    }
+}
