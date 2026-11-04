@@ -44,7 +44,6 @@ function addToCart(productName, productPrice) {
 
     localStorage.setItem('myCart', JSON.stringify(cart));
     updateCartBadge(); // تحديث العداد فوق
-    alert("تم إضافة المنتج للسلة بنجاح! 🛍️");
 }
 
 // دالة تحديث رقم العداد اللي في الهيدر
