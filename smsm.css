@@ -209,13 +209,18 @@ h2:hover{
 
 @media (max-width: 768px) {
     header {
-      flex-direction: column;
-        /* شلنا الـ height الثابت عشان العناصر ما تتداخلش */
-        height: auto; 
-        padding: 12px 10px;
-        display: block;
-        font-size: 14px;
+      display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        height: 10%; 
+        padding: 3px 5px; /* بنقلل الهوامش فوق وتحت عشان ينحف */
         width: 100%;
+        gap: 2px;          /* مسافة صغيرة جداً بين العناصر */
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 1000;
     }
     .add {
         position: static;
