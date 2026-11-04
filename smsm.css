@@ -210,10 +210,18 @@ h2:hover{
 @media (max-width: 768px) {
     header {
         flex-direction: column;
-        gap: 12px;
+         height: 50px;
         padding: 12px 10px;
+         display: flex;
+           font-size: 14px;
+           width: 100%;
     }
-
+    .add {
+        position: static;
+        margin: 0;
+          margin-left: auto;
+          transform: translateY(-3px) scale(0.9);
+    }
     .n {
         gap: 12px;
         font-size: 14px;
