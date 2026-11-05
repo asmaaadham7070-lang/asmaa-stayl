@@ -237,6 +237,7 @@ h2:hover{
 
 .add{
     cursor: pointer;
+    
 }
 
 
@@ -263,6 +264,7 @@ h2:hover{
     .add {
         position: static;
         margin: 0;
+         font-size: 8px;
           transform: translateY(-3px) scale(0.9);
     }
     .n {
@@ -300,6 +302,9 @@ h2:hover{
 
     .img {
         height: 280px; /* تناسب ارتفاع الصورة مع شاشة الموبايل */
+    }
+    .logo{
+        font-size: 8px;
     }
 }
 
