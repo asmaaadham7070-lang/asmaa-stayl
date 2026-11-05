@@ -65,7 +65,7 @@ a:hover {
 
 .n {
     gap: 12px;
-    font-size: 17px;
+    font-size: 19px;
     flex-wrap: wrap;
     justify-content: center;
 }
@@ -267,7 +267,7 @@ h2:hover{
     }
     .n {
         gap: 7px;
-        font-size: 14px;
+        font-size: 8px;
         flex-wrap: wrap;
         justify-content: center;
     }
