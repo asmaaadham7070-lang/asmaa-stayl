@@ -253,7 +253,10 @@ h2:hover{
         align-items: center;
         text-align: center;
         height: auto; 
-        padding: 2px 3px; /* بنقلل الهوامش فوق وتحت عشان ينحف */
+        flex-direction: row;        /* جعل العناصر بجانب بعضها أفقياً */
+        align-items: center;        /* محاذاة رأسية في المنتصف */
+        justify-content: space-between; /* توزيع العناصر يميناً ويساراً */
+        padding: 8px 10px; /* بنقلل الهوامش فوق وتحت عشان ينحف */
         width: 100%;
         gap: 1px;          /* مسافة صغيرة جداً بين العناصر */
         position: fixed;
