@@ -32,6 +32,43 @@ header{
     display: flex;
     gap: 45px; /* مسافة متساوية ومريحة بين كل قسم والتاني */
 }
+/* التنسيق الأساسي للرابط ليشبه الزرار */
+a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    
+    /* الإطار الأبيض والبروز */
+    border: 1.5px solid #ffffff; 
+    border-radius: 8px; /* تدوير الحواف عشان يبان زرار احترافي */
+    padding: 4px 10px; /* مساحة داخلية خفيفة حول النص */
+    
+    transition: all 0.25s ease-in-out; /* نعومة الحركة */
+    cursor: pointer;
+}
+
+/* تأثير الـ Hover لما الماوس يقف عليه */
+a:hover {
+    background-color: #ffffff; /* تعبئة باللون الأبيض */
+    color: #000000; /* تغيير لون النص لأسود ليظهر فوق الأبيض (غير اللون حسب تصميمك) */
+    box-shadow: 0 4px 12px rgba(255, 255, 255, 0.25); /* إضاءة/ظل أبيض خفيف */
+    transform: translateY(-2px); /* رفعة بسيطة للأعلى بتمثّل الضغط */
+}
+
+/* الكود الخاص بك كما هو */
+.add {
+    position: static;
+    margin: 0;
+    transform: translateY(-3px) scale(0.9);
+}
+
+.n {
+    gap: 12px;
+    font-size: 17px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
 .ph{
      width: 100%;
     height: 500px;;
@@ -203,6 +240,7 @@ h2:hover{
 }
 
 
+
 /* ========================================== */
 /* إعدادات التجاوب مع الموبايل (Media Queries) */
 /* ========================================== */
@@ -213,10 +251,10 @@ h2:hover{
         flex-direction: column;
         align-items: center;
         text-align: center;
-        height: 10%; 
-        padding: 3px 5px; /* بنقلل الهوامش فوق وتحت عشان ينحف */
+        height: auto; 
+        padding: 2px 3px; /* بنقلل الهوامش فوق وتحت عشان ينحف */
         width: 100%;
-        gap: 2px;          /* مسافة صغيرة جداً بين العناصر */
+        gap: 1px;          /* مسافة صغيرة جداً بين العناصر */
         position: fixed;
         top: 0;
         left: 0;
@@ -225,11 +263,10 @@ h2:hover{
     .add {
         position: static;
         margin: 0;
-          margin-left: auto;
           transform: translateY(-3px) scale(0.9);
     }
     .n {
-        gap: 12px;
+        gap: 7px;
         font-size: 14px;
         flex-wrap: wrap;
         justify-content: center;
