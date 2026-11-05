@@ -276,6 +276,7 @@ h2:hover{
         font-size: 8px;
         justify-content: center;
         flex-wrap: nowrap;          /* لمنع النزول لسطر جديد لو المساحة تسمح أو حسب رغبتك */
+        display: flex
     }
 
     .ph {
